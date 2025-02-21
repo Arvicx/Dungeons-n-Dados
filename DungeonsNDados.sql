@@ -63,22 +63,26 @@ CREATE TABLE itens(
 );
 
 -- insira o nome do jogador
-INSERT INTO jogador(nome) VALUES ("");
+INSERT INTO jogador(nome) VALUES ("Arthur");
+
+-- primeiro teste
+SELECT * FROM jogador;
 
 -- insira o nome e nível do personagem
-INSERT INTO personagem(nome, nivel) VALUES ("", "");
+INSERT INTO personagem(nome, nivel) VALUES ("Arturo", "1");
 
 -- insira a classe (ex: Guerreiro, Mago, Clérigo) do personagem e a descreva
-INSERT INTO classe(nome, descricao) VALUES ("","");
+INSERT INTO classe(nome, descricao) VALUES ("Ladino","Furtivo");
 
 -- insira uma habilidade e a descreva
-INSERT INTO habilidades(nome,efeito) VALUES ("","");
+INSERT INTO habilidades(nome,efeito) VALUES ("Ataque Furtivo","Adiciona o dobro de dano em ataques com vantagem");
 
 -- insira os itens
-INSERT INTO itens(id,nome,tipo,efeito) VALUES(1,"","","");
+INSERT INTO itens(id,nome,tipo,efeito) VALUES(1,"Adaga","Cortante","1d6 de dano");
 
 -- insira a missão, junto com a recompensa e a descrição dela
-INSERT INTO missao(nome,recompensa,descricao) VALUES ("","","");
+INSERT INTO missao(nome,recompensa,descricao) VALUES ("Cólera","100PO","Mate a Cólera");
 
 -- cadastre monstros, informando o nome, nivel, habilidades, seus efeitos e a descrição do monstro
-INSERT INTO monstro(nome,nivel,habilidade,lore) VALUES ("","","","");
+INSERT INTO monstro(nome,nivel,habilidade,lore) VALUES ("Cólera","1","Adoecer Inimigos","Cólera é uma doença");
+
