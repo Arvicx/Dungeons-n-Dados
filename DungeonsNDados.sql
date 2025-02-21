@@ -61,3 +61,24 @@ CREATE TABLE itens(
     id_personagem INT NOT NULL,
     FOREIGN KEY(id_personagem) REFERENCES personagem(id)
 );
+
+-- insira o nome do jogador
+INSERT INTO jogador(nome) VALUES ("");
+
+-- insira o nome e nível do personagem
+INSERT INTO personagem(nome, nivel) VALUES ("", "");
+
+-- insira a classe (ex: Guerreiro, Mago, Clérigo) do personagem e a descreva
+INSERT INTO classe(nome, descricao) VALUES ("","");
+
+-- insira uma habilidade e a descreva
+INSERT INTO habilidades(nome,efeito) VALUES ("","");
+
+-- insira os itens
+INSERT INTO itens(id,nome,tipo,efeito) VALUES(1,"","","");
+
+-- insira a missão, junto com a recompensa e a descrição dela
+INSERT INTO missao(nome,recompensa,descricao) VALUES ("","","");
+
+-- cadastre monstros, informando o nome, nivel, habilidades, seus efeitos e a descrição do monstro
+INSERT INTO monstro(nome,nivel,habilidade,lore) VALUES ("","","","");
